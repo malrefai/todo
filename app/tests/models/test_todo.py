@@ -17,25 +17,25 @@ class TodoModelTest(TestCase):
         TodoModelTest.todo = TodoFactory.build()
 
     def test_title_field(self):
-        field = TodoModelTest.todo._meta.get_field('title')
+        field = TodoModelTest.todo._meta.get_field("title")
         self.assertIsInstance(field, models.CharField)
         self.assertEqual(field.max_length, 100)
         self.assertFalse(field.blank)
 
     def test_owner_field(self):
-        field = TodoModelTest.todo._meta.get_field('owner')
+        field = TodoModelTest.todo._meta.get_field("owner")
         self.assertIsInstance(field, models.CharField)
         self.assertEqual(field.max_length, 100)
         self.assertTrue(field.blank)
         self.assertTrue(field.null)
 
     def test_created_field(self):
-        field = TodoModelTest.todo._meta.get_field('created')
+        field = TodoModelTest.todo._meta.get_field("created")
         self.assertIsInstance(field, models.DateTimeField)
         self.assertTrue(field.auto_now_add)
 
     def test_modified_field(self):
-        field = TodoModelTest.todo._meta.get_field('modified')
+        field = TodoModelTest.todo._meta.get_field("modified")
         self.assertIsInstance(field, models.DateTimeField)
         self.assertTrue(field.auto_now)
 

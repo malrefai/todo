@@ -14,4 +14,4 @@ class Todo(models.Model):
         return f"{self.title}"
 
     class Meta:
-        ordering = ('created',)
+        ordering = ("created",)
