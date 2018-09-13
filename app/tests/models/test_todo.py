@@ -33,10 +33,12 @@ class TodoModelTest(TestCase):
         field = TodoModelTest.todo._meta.get_field('created')
         self.assertIsInstance(field, models.DateTimeField)
         self.assertTrue(field.auto_now_add)
-        self.assertFalse(field.blank)
 
     def test_modified_field(self):
         field = TodoModelTest.todo._meta.get_field('modified')
         self.assertIsInstance(field, models.DateTimeField)
         self.assertTrue(field.auto_now)
-        self.assertFalse(field.blank)
+
+    def test_model_returns_readable_representation(self):
+        """Test a readable string is returned for the model instance."""
+        self.assertEqual(str(TodoModelTest.todo), TodoModelTest.todo.title)
