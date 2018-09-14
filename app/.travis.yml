@@ -12,7 +12,6 @@ script:
   - python manage.py makemigrations
   - python manage.py migrate
   - python manage.py test
-  - py.test --cov=validate_transaction
 # publish coverage only after a successful build
 after_success:
   - codecov
