@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/malrefai/todo.svg?branch=develop)](https://travis-ci.org/malrefai/todo)
-[![codecov](https://codecov.io/gh/malrefai/todo/branch/develop/graph/badge.svg)](https://codecov.io/gh/malrefai/todo)
+[![Build Status](https://travis-ci.org/malrefai/todo.svg?branch=master)](https://travis-ci.org/malrefai/todo)
+[![codecov](https://codecov.io/gh/malrefai/todo/branch/master/graph/badge.svg)](https://codecov.io/gh/malrefai/todo)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmalrefai%2Ftodo.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmalrefai%2Ftodo?ref=badge_shield)
 
 # Todo App
