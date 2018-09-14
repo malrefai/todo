@@ -14,3 +14,7 @@
 # Unit test / coverage reports
 .coverage
 /.pytest_cache/
+
+
+# database
+*.sqlite3
