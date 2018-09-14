@@ -1,6 +1,7 @@
-from factory import DjangoModelFactory, Faker
+from factory import DjangoModelFactory, Faker, SubFactory
 
 from app.models import Item
+from app.tests.factories.todos import TodoFactory
 
 
 class ItemFactory(DjangoModelFactory):
@@ -13,3 +14,4 @@ class ItemFactory(DjangoModelFactory):
 
     name = Faker('sentence', nb_words=3)
     done = Faker('boolean')
+    todo = SubFactory(TodoFactory)
