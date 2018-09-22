@@ -1,0 +1,31 @@
+{
+  "type": "object",
+  "required": [
+    "url",
+    "id",
+    "owner",
+    "title",
+    "created",
+    "modified"
+  ],
+  "properties": {
+    "url": {
+      "type": "string"
+    },
+    "id": {
+      "type": "number"
+    },
+    "owner": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "created": {
+      "type": "string"
+    },
+    "modified": {
+      "type": "string"
+    }
+  }
+}
