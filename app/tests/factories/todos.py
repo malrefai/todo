@@ -11,5 +11,5 @@ class TodoFactory(DjangoModelFactory):
     class Meta:
         model = Todo
 
-    title = Faker('sentence', nb_words=2)
-    owner = Faker('sentence', nb_words=1)
+    title = Faker("sentence", nb_words=2)
+    owner = Faker("sentence", nb_words=1)

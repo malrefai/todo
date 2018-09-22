@@ -12,6 +12,6 @@ class ItemFactory(DjangoModelFactory):
     class Meta:
         model = Item
 
-    name = Faker('sentence', nb_words=3)
-    done = Faker('boolean')
+    name = Faker("sentence", nb_words=3)
+    done = Faker("boolean")
     todo = SubFactory(TodoFactory)
