@@ -26,8 +26,9 @@ class TestSetUP(TestCase):
 
     def initCreateUpdate(self):
         self.initDetailDestroy()
-        self._title = "test_title"  # Faker("sentence", nb_words=2)
-        self._owner = "test_owner"  # Faker("sentence", nb_words=1)
+        todo = TodoFactory.build()
+        self._title = todo.title
+        self._owner = todo.owner
 
     @property
     def todos(self):
